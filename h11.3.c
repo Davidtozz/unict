@@ -7,10 +7,10 @@ int main(void){
     
 
 
-    printf("\na: %.f\n", 2.0 / 0);
+    printf("\na: %.f\n", 2.0 / 0); // ? inf
     
-    printf("b: %d", 2 / 0);
-    if(2 / 0 == SIGFPE) printf("error");
+    printf("b: %d", 2 / 0); // ! Floating point exception (core dumped) 
+
     
 /**
  * ? Floats are made in such a way they're able to be represented in NaN, INF etc.  
